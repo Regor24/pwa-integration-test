@@ -1,0 +1,14 @@
+cache/
+.idea/
+node_modules/
+dist/
+static/dist
+*.log
+*.map
+/report
+.DS_Store
+.env
+client/static/
+.idea/*
+*.dump
+*.pyc
