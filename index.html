@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PWA Test</title>
+
+    <script src="./iframeResizer.min.js"></script>
 </head>
 <body>
     <style>
@@ -22,15 +24,20 @@
         id="inlineFrameExample"
         title="Inline Frame Example"
         width="100%"
-        height="600"
-        src="https://knauf.taboom.ru/">
+        src="https://knauf.bro.agency/embed">
     </iframe>
     <br/>
 
     <h2>Приложение можно установить, перейдя по ссылке:</h2>
     <a
-        href="https://knauf.taboom.ru/install-app"
+        href="https://knauf.bro.agency/install-app"
         target="_blank"
         style="display: inline-block; border: 1px solid; color: black; text-decoration: none; padding: 10px;">Установить приложение</a>
+    
+    <script>
+        if (iFrameResize) {
+            iFrameResize({ log: true }, '#myIframe')
+        }
+    </script>
 </body>
 </html>
